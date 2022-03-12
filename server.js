@@ -2,7 +2,6 @@ const express = require("express");
 const app = express();
 const connection = require('./database/database')
 const Cadastro = require('./database/Cadastro')
-const multer = require('multer')
 
 const upload = multer({dest:"uploads/"})
 

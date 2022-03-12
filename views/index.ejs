@@ -1,0 +1,43 @@
+<%- include('partials/header.ejs')%>
+  <form method="POST" action="/fimcadastro">
+    <div class="campo">
+      <label>Nome </label>
+      <input type="text" class="campo-text" name="nome">
+    </div>
+
+    <div class="campo"><label>Sobrenome</label>
+      <input type="text" name="sobrenome" class="campo-text">
+    </div>
+
+    <div class="genero">
+      <label for="G">Sexo</label><input type="radio" name="sexo" value="Masculino"><label for="Masculino">Masculino</label>
+      <input type="radio" name="sexo" value="Feminino"><label for="Feminino">Feminino</label>
+    </div>
+
+    <div class="campo"><label>E-mail</label><input type="text" name="email" class="campo-text"></div>
+    <div class="campo"><label>Idade</label><input type="number" name="idade" class="campo-text"></div>
+    <div class="campo"><label>CPF</label><input type="number" name="cpf" class="campo-text"></div>
+
+
+    <div class="campo"><label>Formação</label><input type="text" name="formacao" class="campo-text"></div>
+    <div class="campo"><label>Tecnologia</label><input type="text" name="tecnologia" class="campo-text"></div>
+
+    <div class="campo">
+      <label>Cargo</label>
+      <input type="text" name="cargo" class="campo-text">
+    </div>
+
+    <div class="campo">
+      <label>Resumo Profissional</label>
+      <textarea name="resumo"></textarea>
+    </div>
+
+    <div class="botao">
+      <button id="enviar" type="submit">Enviar >></button>
+    </div>
+
+  </form>
+
+</body>
+
+</html>

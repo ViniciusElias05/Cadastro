@@ -23,7 +23,7 @@ const Cadastro = connection.define('cadastro', {
         allowNull: false
     },
     cpf:{
-        type: Sequelize.DOUBLE,
+        type: Sequelize.BIGINT(11),
         allowNull: false
     },
     formacao:{
